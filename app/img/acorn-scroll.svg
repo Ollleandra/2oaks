@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287" height="136" viewBox="0 0 287 136">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #090909;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f8f8f8;
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        opacity: 0.4;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #020202;
+        stroke-width: 2px;
+      }
+    </style>
+    <filter id="filter" x="111" y="19" width="60" height="90" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f5f5f5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Монтажна_область_1" data-name="Монтажна область 1">
+    <path class="cls-1" d="M268.3,136c-77.7,0-75.507-33.887-69.166-63S188.028,0,143,0V136H268.3ZM18,136c77.516,0,75.326-33.887,69-63S98.08,0,143,0V136H18Z"/>
+    <path id="Shape_3_copy_2" data-name="Shape 3 copy 2" class="cls-2" d="M170.386,50.6a14.848,14.848,0,0,1-1.064-2.892c-0.341-1.464-1.028-1.465-2.207-3.267s-2.134-.714-3.238-2.029-1.6-1.165-2.857-1.8-1.789-2.142-3.694-3.081-2.857-1.429-4-3.607-0.952-.9-1.828-1.841-1.141-2.328-1.864-3.268-2.25.637-2.249-.376-0.828-9.426-5.631-9.427-4.391,7.17-4.392,8.634-0.383,1.164-1.87,1.539-1.756,2.327-2.443,3.529-2.213,1.8-4.729,2.927-4.5,3-8.849,5.554-8.7,8.032-8.474,11.937,3.039,9.539,7,10.292c0,0-2.3,12.165,1.5,22.005s7.457,12.921,11.648,14.8,5.638,2.969,6.78,4.49S139.07,109,141.242,109s2.176-2.76,3.321-4.28,2.595-2.609,6.789-4.485,7.857-4.953,11.679-14.79,1.5-22.569,1.5-22.569h0a3.19,3.19,0,0,0,1.537-.45c1.03-.938,3.395-2.627,4.006-3.9a15.952,15.952,0,0,0,.92-5.069A5.956,5.956,0,0,0,170.386,50.6Z"/>
+    <g id="down_arrow" data-name="down arrow" class="cls-3">
+      <path class="cls-4" d="M131.1,63.585L142.414,74.9,141,76.314,129.686,65Z"/>
+      <path id="Rectangle_11_copy" data-name="Rectangle 11 copy" class="cls-4" d="M150.9,63.585L152.314,65,141,76.314,139.586,74.9Z"/>
+    </g>
+  </g>
+</svg>
