@@ -32,9 +32,9 @@ header, main, section, footer, .row{
 }
 .transition-btn{
   transition:
-          border-color 0.1s ease-out,
-          opacity 0.3s ease-out,
-          background 0.3s ease-out 0.1s;
+          all 0.3s ease-out,
+          border-color 0.1s,
+          background 0.3s 0.1s;
 }
 /* Menu Styles for Header and Footer*/
 .menu-hover {
@@ -45,7 +45,8 @@ header, main, section, footer, .row{
     margin: 0 auto;
     content: "";
     border-top: 1.5px solid $gray-light;
-    width: 0;
+    transition: all 0.3s ease-out 0.2s;
+    width: 0%;
     height:1.5px;
     top: 1.44rem;
     opacity: 0;
@@ -66,6 +67,9 @@ header, main, section, footer, .row{
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
+    @extend .transition-btn;
+  }
+  &:hover{
     @extend .transition-btn;
   }
 }
@@ -102,13 +106,14 @@ header,footer{
           background: url("../img/logo-hover.svg") no-repeat;
           background-size: contain;
           width: 0;
+          transition: all 0.3s ease-out 0.2s;
           height: 1.12rem;
           margin-left: -0.8rem;
           top: 1.875rem;
           left: 50%;
         }
         &:hover::after {
-          transition: width 0.3s ease-out;
+          transition: all 0.3s ease-out;
           width: 1.6rem;
         }
       }
@@ -271,36 +276,30 @@ header,footer{
       max-height: 26vh;
       max-width: 80%;
     }
-    figcaption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
     p {
-      position: relative;
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
       box-sizing: border-box;
-      padding: 1.8rem 3.1rem;
+      padding: 40vh 3.1rem 0;
       font-size: 1rem;
       line-height: 1.5;
       text-align: left;
       color: #aeaeae;
-
-      &::after{
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width:100%;
-        height: 7px;
-        bottom: 0;
-        left:0;
-        border-bottom: 7px solid #2c662f;
-        transition: all 0.5s ease-out;
-      }
+      transition: all 0.3s ease-out;
     }
     h3 {
-      margin: 0 3.125rem;
       a {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        box-sizing: padding-box;
+        padding: 32vh 9% 0;
         font-family: BaskervilleOldFace;
         font-size: 3.75rem;
         line-height: 0.6;
@@ -308,12 +307,14 @@ header,footer{
         color: #ffffff;
         font-weight: normal;
         text-decoration: none;
+        border-bottom: 7px solid #2c662f;
+        transition: all 0.5s ease-out;
+        &:hover{
+          border-color: #ffffff;
+        }
       }
       &:hover+p{
         color: #ffffff;
-      }
-      &:hover+p::after{
-        border-color: #ffffff;
       }
     }
   }
