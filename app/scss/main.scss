@@ -394,6 +394,7 @@ header,footer{
       &:hover{
         img {
           filter: grayscale(70%) sepia(10%) brightness(100%);
+
         }
         &>figcaption {
           top: 0;
@@ -408,6 +409,7 @@ header,footer{
         width: 100%;
         height: 100%;
         background: rgba(38,136,50,0.7);
+        transition: all 0.3s ease-out 0.2s;
         p{
           position: absolute;
           left: 0;
