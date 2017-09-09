@@ -103,14 +103,14 @@ header,footer{
           position: absolute;
           display: inline-block;
           content: "";
-          background: url("../img/logo-hover.svg") no-repeat;
+          background: url("../img/logo-hover.svg") no-repeat center;
           background-size: contain;
-          width: 0;
+          width: 0rem;
           transition: all 0.3s ease-out 0.2s;
           height: 1.12rem;
-          margin-left: -0.8rem;
-          top: 1.875rem;
-          left: 50%;
+          margin: 0.5rem;
+          top: 0%;
+          left: 100%;
         }
         &:hover::after {
           transition: all 0.3s ease-out;
@@ -204,6 +204,11 @@ header,footer{
     font-size: 2.47rem;
     text-align: right;
   }
+  @keyframes acorn-scroll {
+    50%{
+      background-position: center 60%, center bottom;
+    }
+  }
   .btn-down{
     position: absolute;
     bottom: -1px;
@@ -211,8 +216,16 @@ header,footer{
     align-self: center;
     width: 25%;
     height: 136px;
-    background: url("../img/acorn-scroll.svg") no-repeat center bottom;
-    background-size: contain;
+    background:
+            url("../img/down-arrow.svg") no-repeat center center,
+            url("../img/acorn-scroll.svg") no-repeat center bottom;
+    background-size: auto 70%, contain;
+    transition: all 0.3s ease-out;
+
+    &:hover{
+      background-position: center 40%, center bottom;
+      animation: acorn-scroll 0.3s 2;
+    }
     a{
       display: inline-block;
       padding-top: 15%;
@@ -397,34 +410,35 @@ header,footer{
 
         }
         &>figcaption {
-          top: 0;
+          opacity: 1;
           transition: all 0.3s ease-out;
         }
       }
       figcaption {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         position: absolute;
-        top: -100%;
+        top: 0;
         left: 0;
         bottom: 0;
+        opacity: 0;
         width: 100%;
         height: 100%;
         background: rgba(38,136,50,0.7);
         transition: all 0.3s ease-out 0.2s;
         p{
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
+          align-self: flex-end;
+          margin: 0.7rem;
           color:#fff;
           text-align: center;
           &:first-of-type{
-            bottom: 3.5rem;
+            text-align: left;
             font-family:BaskervilleOldFace;
-            font-size: 2.75rem;
+            font-size: 1.5rem;
           }
         }
         .btn-view{
-          margin:4% auto;
           display: inline-block;
           height: 37px;
           width: 125px;
@@ -436,6 +450,7 @@ header,footer{
           transition: all 0.3s ease-out;
           &:hover{
             background-color: #ffffff;
+            border-color: #00a651;
             color: #000000;
           }
         }
