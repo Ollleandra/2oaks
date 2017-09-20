@@ -13,6 +13,14 @@ $green-review:#086635;
 $gray:#999999;
 html{
   font: normal 16px RobotoRegular;
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
 }
 nav, header, footer, aside, article, figure, figcaption, section {
   display: block;
@@ -77,6 +85,11 @@ header{
   position: fixed;
   background: rgba(255,255,255,0.9);
   z-index: 10;
+
+  //Menu "Hamburger"
+  #menu-checkbox,  #menu-checkbox~label {
+    display: none;
+  }
 }
 header,footer{
   padding: 0.5rem 2rem;
@@ -167,8 +180,8 @@ header,footer{
         text-decoration: none;
         i{
           font-size: 1.625rem;
-          opacity: 0.7;
-          color: $gray-deep;
+          opacity: 0.6;
+          color: #000000;
           transition: 0.4s;
           &:hover{
             opacity: 1;
@@ -206,20 +219,20 @@ header,footer{
   }
   @keyframes acorn-scroll {
     50%{
-      background-position: center 60%, center bottom;
+      background-position: center 50%, center bottom;
     }
   }
   .btn-down{
     position: absolute;
     bottom: -1px;
-    left: 37.5%;
+    left: 30%;
     align-self: center;
-    width: 25%;
-    height: 136px;
+    width: 40%;
+    height: 120px;
     background:
-            url("../img/down-arrow.svg") no-repeat center center,
+            url("../img/down-arrow.svg") no-repeat center 60%,
             url("../img/acorn-scroll.svg") no-repeat center bottom;
-    background-size: auto 70%, contain;
+    background-size: auto 60%, auto 90%;
     transition: all 0.3s ease-out;
 
     &:hover{
@@ -271,8 +284,8 @@ header,footer{
     position: relative;
     box-sizing: border-box;
     margin: 5.5vh 0 4.2vh;
-    padding: 5.5vh 3vh 0;
-    height: 56vh;
+    padding: 5.5vh 2rem 0;
+    height: 56vmin;
     width: 52vh;
     background:black;
     &:first-of-type{
@@ -284,10 +297,8 @@ header,footer{
     img {
       display: block;
       margin: 0 auto;
-      width: 20vw;
+      width: 40vmin;
       height: auto;
-      max-height: 26vh;
-      max-width: 80%;
     }
     p {
       position: absolute;
@@ -295,7 +306,7 @@ header,footer{
       top: 0;
       width: 100%;
       box-sizing: border-box;
-      padding: 40vh 3.1rem 0;
+      padding: 36vh 2rem 0;
       font-size: 1rem;
       line-height: 1.5;
       text-align: left;
@@ -312,7 +323,7 @@ header,footer{
         right: 0;
         z-index: 5;
         box-sizing: padding-box;
-        padding: 32vh 9% 0;
+        padding: 28vh 2rem 0;
         font-family: BaskervilleOldFace;
         font-size: 3.75rem;
         line-height: 0.6;
@@ -352,7 +363,7 @@ header,footer{
       }
     }
     .discover {
-      width: 87%;
+      width: 82%;
       border: solid 1px #ffffff;
       a:hover{
         background-color: #ffffff;
@@ -361,7 +372,7 @@ header,footer{
       }
     }
     .use {
-      width: 10%;
+      width: 15%;
       margin-left: calc(3% - 4px);
       border: solid 1px #2c662f;
       a:hover{
@@ -429,9 +440,10 @@ header,footer{
         transition: all 0.3s ease-out 0.2s;
         p{
           align-self: flex-end;
-          margin: 0.7rem;
-          color:#fff;
+          flex-basis:35%;
+          margin: 0.7rem auto;
           text-align: center;
+          color:#fff;
           &:first-of-type{
             text-align: left;
             font-family:BaskervilleOldFace;
@@ -440,11 +452,11 @@ header,footer{
         }
         .btn-view{
           display: inline-block;
-          height: 37px;
-          width: 125px;
+          height: 2.3rem;
+          width: 100%;
           border: 1px solid #ffffff;
           font-size: 1.125em;
-          line-height: 1.8;
+          line-height: 1.9;
           color:#fff;
           text-decoration: none;
           transition: all 0.3s ease-out;
@@ -518,9 +530,8 @@ header,footer{
     text-align: center;
     img{
       display: inline-block;
-      width:19vw;
-      height: auto;
-      min-height: 17vw;
+      height:19vmax;
+      width:auto;
     }
     figcaption{
       text-align: left;
@@ -629,7 +640,7 @@ header,footer{
         width: 75%;
         left: 22%;
         font-size: 0.875rem;
-        margin-top: -8%;
+        margin-top: -3rem;
         cite{
           text-align: right;
           p{
@@ -699,14 +710,14 @@ footer {
     a{
       display: block;
       margin: 20px auto 0;
-      width: 4%;
-      height:35px;
+      width: 2.5rem;
+      height:2.5rem;
       background-color: #fff;
       border-radius: 10px 10px 0 0;
       text-decoration: none;
       i{
         color: #000;
-        opacity:0.8;
+        opacity:0.7;
         font-size: 1.5rem;
         transition: all 0.3s ease-out;
         &:hover{
