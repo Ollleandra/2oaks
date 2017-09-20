@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="90" viewBox="0 0 60 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f8f8;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #020202;
+        stroke-width: 2px;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="60" height="90" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f5f5f5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Монтажна_область_1" data-name="Монтажна область 1">
+    <path id="Shape_3_copy_2" data-name="Shape 3 copy 2" class="cls-1" d="M59.386,31.6A14.853,14.853,0,0,1,58.322,28.7c-0.341-1.464-1.028-1.465-2.207-3.267s-2.134-.714-3.238-2.029-1.6-1.165-2.857-1.8-1.789-2.142-3.694-3.081-2.857-1.429-4-3.607-0.952-.9-1.828-1.841-1.141-2.328-1.864-3.268-2.25.638-2.249-.376S35.559,0.007,30.756.006s-4.391,7.17-4.392,8.634S25.981,9.8,24.494,10.179s-1.756,2.327-2.443,3.529-2.213,1.8-4.729,2.927-4.5,3-8.849,5.554S-0.226,30.221,0,34.126s3.039,9.539,7,10.292c0,0-2.3,12.165,1.5,22.005s7.457,12.921,11.648,14.8,5.638,2.969,6.78,4.49S28.07,90,30.242,90s2.175-2.76,3.32-4.28,2.595-2.609,6.789-4.485,7.857-4.954,11.679-14.79,1.5-22.569,1.5-22.569h0a3.188,3.188,0,0,0,1.537-.45c1.03-.938,3.395-2.627,4.006-3.9a15.944,15.944,0,0,0,.92-5.069A5.965,5.965,0,0,0,59.386,31.6Z"/>
+    <g id="down_arrow" data-name="down arrow" class="cls-2">
+      <path class="cls-3" d="M20.1,44.585L31.414,55.9,30,57.314,18.686,46Z"/>
+      <path id="Rectangle_11_copy" data-name="Rectangle 11 copy" class="cls-3" d="M39.9,44.585L41.314,46,30,57.314,28.586,55.9Z"/>
+    </g>
+  </g>
+</svg>
