@@ -7,17 +7,16 @@
   header{
     //Menu "Hamburger"
     .hamburger{
-      padding: 1rem 1rem 0.75rem;
-
+      padding: 1rem 1rem 0.9rem;
       &:hover {
         cursor: pointer;
       }
       .line{
         width: 1.625rem;
-        height: 0.125rem;
+        height: 0.15rem;
         background-color: #000000;
         display: block;
-        margin: 0  0 0.3rem;
+        margin-bottom: 0.25rem;
         transition: all 0.3s ease-in-out;
 
         &:nth-of-type(2){
@@ -32,10 +31,10 @@
       opacity: 0;
     }
     .hamburger.is-active .line:nth-child(1){
-      transform: translateY(0.44rem) rotate(45deg);
+      transform: translateY(0.4rem) rotate(45deg);
     }
     .hamburger.is-active .line:nth-child(3){
-      transform: translateY(-0.44rem) rotate(-45deg);
+      transform: translateY(-0.4rem) rotate(-45deg);
     }
     #menu-checkbox~label {
       display: block;
